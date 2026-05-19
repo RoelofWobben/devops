@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: nonprofit-website
+   namespace: default
+   labels:
+     app: nonprofit-website
+spec:
+   replicas: 2
+   selector:
+     matchLabels:
+       app: nonprofit-website
+   template:
+     metadata:
+       labels:
+         app: nonprofit-website
+     spec:
+       containers:
+         - name: nginx
+           image: nginx:latest
+           ports:
+             - containerPort: 80
