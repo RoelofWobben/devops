@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-    name: nonprofit-website-configMap
-data: |
+  name: nonprofit-website-configmap
+  namespace: default
+data:
+  index.html: |
     <html>
-    <h1> Welcome to my volunteer website</h1>
-    </br>
-    <p> This is my first devops page<p>
+      <h1>Welcome to my volunteer website</h1>
+      </br>
+      <p>This is my first devops page</p>
     </html>
-
