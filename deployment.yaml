@@ -33,5 +33,5 @@ spec:
       volumes:
         - name: html-volume
           configMap:
-            name: non-profit-website-configmap
+            name: nonprofit-website-configmap
 
