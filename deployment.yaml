@@ -21,17 +21,11 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:latest
+          image: nonprofit-website:v1
+          imagePullPolicy: Never
 
           ports:
             - containerPort: 80
 
-          volumeMounts:
-            - name: html-volume
-              mountPath: /usr/share/nginx/html
-
-      volumes:
-        - name: html-volume
-          configMap:
-            name: nonprofit-website-configmap
+          
 
