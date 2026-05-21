@@ -1,0 +1,9 @@
+apiVersion: L2Advertisment
+kind: L2Advertisement
+metadata:
+    name: lb-addresses
+    namespace: metallb-system
+spec: 
+   ipAddressPools: 
+     - lb-addresses
+
