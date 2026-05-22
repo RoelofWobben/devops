@@ -7,7 +7,7 @@ spec:
     parentRefs: 
     - name: org2-gateway 
     hostnames: 
-        - "org2.localhost" 
+        - "org2.local" 
     rules: 
         - backendRefs: 
             - name: org2-website-service
