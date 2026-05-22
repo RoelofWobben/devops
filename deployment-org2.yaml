@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Deployment
+metatdata: 
+    name: org2-website
+    namespace: default
+    labels: 
+       app: org2-website
+spec:
+    replicas: 2
+    selector: 
+        matchLabels:
+           app: org2-website
+    template:
+       metadata:
+          labels:
+             app: org2-website
+      spec:
+         containers:
+             - name: nginx
+             image: org2-website:v1
+             imagePullPolicy: Never
+             ports:
+                - containerPort: 80 
+
