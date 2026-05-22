@@ -19,6 +19,6 @@ spec:
              - name: nginx
                image: org2-website:v1
                imagePullPolicy: Never
-             ports:
+               ports:
                   - containerPort: 80 
 

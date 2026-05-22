@@ -7,7 +7,7 @@ spec:
     parentRefs: 
        - name: nonprofit-gateway 
     hostnames:
-       -  " org1.localhost" 
+       -  "org1.localhost" 
     rules:
      - backendRefs: 
         - name: nonprofit-website-service
